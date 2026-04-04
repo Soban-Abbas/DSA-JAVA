@@ -1,5 +1,4 @@
 import java.util.Arrays;
-
 public class even {
 
     public static int[] evennumbers(int[] n) {
