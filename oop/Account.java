@@ -17,13 +17,17 @@ abstract class Account {
 
     abstract void calculateInterest();
 
+    void getAccountNumber(){
+        System.out.println("Account Number : " + this.accountNumber);
+    }
+
     double getBalance() {
         return this.balance;
     }
 
     void deposit(int amount) {
         if (amount > 0) {
-            this.balance = this.balance + balance;
+            this.balance = this.balance + amount;
             System.out.println("Amount Cradited Successfully");
         } else {
             System.out.println(" Failed : Invalid Amount");
@@ -32,7 +36,7 @@ abstract class Account {
 
     void deposit(double amount) {
         if (amount > 0) {
-            this.balance = this.balance + balance;
+            this.balance = this.balance + amount;
             System.out.println("Amount Cradited Successfully");
         } else {
             System.out.println(" Failed : Invalid Amount");

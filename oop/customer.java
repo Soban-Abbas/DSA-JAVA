@@ -16,11 +16,12 @@ public class customer {
         this.CustomerName=customerName;
 
     }
-    void getCustomerAccount(){
-        System.out.println("Customer :" + CustomerName +" has " + account);
+    Account getCustomerAccount(){
+        System.out.println("Account Type :" + account.getClass().getSimpleName());
+        return account;
     }
     void setCustomerAccount(Account account){
         this.account=account;
-        System.out.println("Account type is changed");
+       // System.out.println("Account type is changed");
     }
 }

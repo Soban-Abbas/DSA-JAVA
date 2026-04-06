@@ -4,7 +4,7 @@ class savingAcc extends Account {
 
     private int TimeInYear = 1;
     private int interestRate = 5;
-    private double balanceInAccount = super.getBalance();
+    private double balanceInAccount;
     private double Interest;
 
     savingAcc() {
@@ -17,6 +17,7 @@ class savingAcc extends Account {
 
     @Override
     void calculateInterest() {
+        this.balanceInAccount=super.getBalance();
         this.Interest = (double) (balanceInAccount * interestRate * TimeInYear) / 100;
         System.out.println("Interest On Maintaining Current Balace for 1 year :" + Interest);
     }
